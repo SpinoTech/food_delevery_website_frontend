@@ -1,0 +1,468 @@
+/* css variables is here */
+:root {
+    --navbar-height: 59px;
+}
+
+
+/* navigation bar is here  */
+#navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    /* it makes the navbar in its position while scrooling down */
+}
+
+#navbar::before {
+    content: "";
+    background-color: rgb(244, 230, 230);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.09;
+}
+
+
+/* navbar logo & image styling */
+#logo {
+    margin: 0px 23px;
+}
+
+#logo img {
+    margin: -4px 8px;
+    height: 70px;
+    transition: all 0.4s ease-in-out 0s;
+    /* we applied transition animation effect of css*/
+}
+
+#logo img:hover {
+    height: 100px;
+}
+
+/* navbar list item style */
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul li {
+    /* color: white; */
+    list-style: none;
+    /*it removes the list dots*/
+    font-size: 1.3ram;
+
+}
+
+#navbar ul li a {
+    display: block;
+    padding: 3px 36px;
+    border-radius: 20px;
+    font-size: 1.4rem;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-family: 'Macondo', cursive;
+    /* it it google font family*/
+    transition: all 0.2s ease-in-out 0s;
+    /* we applied transition animation effect of css*/
+}
+
+#navbar ul li a:hover {
+    text-decoration: underline;
+    color: rgb(210, 244, 244);
+    background-color: rgb(87, 27, 27);
+    box-shadow: -2px -2px 3px rgb(201, 200, 200);
+    /* it makes the items box shadow*/
+    font-size: 1.6rem;
+    text-shadow: -2px -2px 3px rgb(134, 82, 82);
+}
+
+/* home section is here */
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 507px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before {
+    content: "";
+    /* background: url('food_bg1.jpg') no-repeat center/cover; */
+    position: absolute;
+    height: 110%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    animation: bg_img_change ease-in-out 20s infinite;
+    /* animation appiled here for background changing */
+}
+
+#home h1 {
+    text-align: center;
+
+    text-shadow: -2px -2px 3px rgb(92, 90, 90);
+    transition: all 0.2s ease-in-out 0s;
+    /* we applied transition animation effect of css*/
+    margin-bottom: 20px;
+}
+
+#home h1:hover {
+    color: rgb(175, 248, 242);
+    text-shadow: -4px -4px 6px rgb(200, 91, 91);
+    font-size: 2.5rem;
+}
+
+#home p {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Dancing Script', cursive;
+    text-shadow: -2px -2px 3px rgb(126, 124, 124);
+}
+
+#home p:hover {
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Dancing Script', cursive;
+    text-shadow: 2px 2px 3px rgb(255, 0, 0);
+}
+
+/* services center css is here */
+#services {
+    margin: 34px;
+
+    display: flex;
+
+}
+
+.services-container h1 {
+    margin-top: 124px;
+    margin-bottom: -47px;
+    transition: all 0.6s ease-in-out;
+
+}
+
+.services-container h1:hover {
+    margin-top: 124px;
+    margin-bottom: -47px;
+    color: rgb(198, 255, 245);
+    transform: rotateY(360deg);
+}
+
+#services .box {
+    /* border: 2px solid rgb(255, 0, 0);  */
+    border-radius: 30px;
+    background-color: rgb(1, 12, 14);
+    padding: 11px 20px;
+    margin: 0px 6px;
+}
+
+#services .box img {
+    border: 2px solid blue;
+    border-radius: 20px;
+    height: 200px;
+    width: 29rem;
+    display: block;
+    margin: auto;
+    opacity: 0.6;
+    transition: all 0.3s ease-in-out;
+    /* it gives the transition effect*/
+
+}
+
+#services .box img:hover {
+    border: 4px solid rgb(180, 246, 225);
+    border-radius: 20px;
+    height: 220px;
+    display: block;
+    margin: auto;
+    opacity: 1.5;
+    transform: rotate(3deg);
+}
+
+#services .box h2 {
+    padding: 1px 2px;
+    transition: all 0.4s ease-in-out;
+
+}
+
+#services .box h2:hover {
+    transform: scale(1.1)
+}
+
+.box h2 a {
+    color: rgb(220, 232, 178);
+    text-decoration: none;
+}
+
+.box h2 a:hover {
+    color: rgb(128, 253, 255);
+    text-decoration: underline;
+}
+
+#services .box p {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.3rem;
+    animation: color_change ease-in-out 10s infinite forwards;
+    /* animation is applied here for color changing the texts */
+}
+
+
+/* button part is here  */
+.btn {
+    padding: 3px 10px;
+    margin: 20px;
+    border: 2px solid white;
+    font-size: 1.7rem;
+    background-color: rgb(19 16 16);
+    /* color: white; */
+    border-radius: 16px;
+}
+
+.btn:hover {
+    font-size: 2.4rem;
+    background-color: rgb(220, 239, 241);
+    transition: all 0.2s ease-in-out 0s;
+    /* we applied transition animation effect of css*/
+}
+
+.btn a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Tapestry', cursive;
+}
+
+.btn a:hover {
+    color: black;
+    text-shadow: 3px 3px 3px black;
+}
+
+/* client side is here */
+
+#client_section {
+    /* border: 2px solid red; */
+    border-radius: 30px;
+    height: 350px;
+}
+
+#client_section::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    z-index: -1;
+    opacity: 0.4;
+    animation: media_part_bg ease-in-out 10s infinite;
+    box-shadow: -10px -15px 10px rgb(73, 72, 72);
+}
+
+#client_section h1 {
+    transition: all 0.8s ease-in-out;
+    margin: 2px 0px;
+}
+
+#client_section h1:hover {
+    color: rgb(180, 247, 247);
+    /* font-size: 80px; */
+    transform: rotateY(360deg);
+}
+
+.clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.client_item {
+    margin: 30px 50px;
+
+
+}
+
+.clients img {
+    height: 12.3rem;
+    transition: all 0.8s ease-in-out;
+}
+
+.clients img:hover {
+    height: 14rem;
+    transform: rotate(360deg);
+}
+
+.client_item h3 {
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.client_item h3:hover {
+    color: rgb(163, 250, 236);
+}
+
+/* contact section */
+
+#contact {
+    position: relative;
+    padding: 7px 0px;
+    box-shadow: -2px -2px 3px white;
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 99%;
+    z-index: -1;
+    opacity: 0.5;
+    background: url('contact_bg.jpg') no-repeat center center/cover;
+}
+
+#contact_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+
+}
+
+#contact_box input,
+#contact_box textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 2px solid black;
+    border-radius: 20px;
+    font-size: 1.3rem;
+}
+
+#contact_box from {
+    width: 50%;
+}
+
+#contact_box label {
+    font-size: 1.5rem;
+    font-family: 'Dancing Script', cursive;
+}
+
+.from_btn {
+    /* border: 2px solid red; */
+    border-radius: 11px;
+    font-size: 1.5rem;
+    display: block;
+    margin: auto;
+    width: 16.5rem;
+    margin-top: 10px;
+    background-color: rgb(45, 43, 43);
+}
+
+.from_btn a {
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: white;
+    font-family: 'Tapestry', cursive;
+
+
+}
+
+
+
+
+/* footer part is here */
+footer {
+    padding: 12px 0px;
+    box-shadow: -4px -4px 4px white;
+}
+
+/* utility classes */
+
+.heading_primary {
+    font-family: 'Tapestry', cursive;
+    font-size: 2.4rem;
+    padding: 20px;
+
+}
+
+.heading_secondary {
+    font-family: 'Macondo', cursive;
+    font-size: 2.4rem;
+    padding: 20px;
+}
+
+.center {
+    text-align: center;
+}
+
+/* the animation part is here  */
+@keyframes bg_img_change {
+    0% {
+        background: url('food_bg1.jpg') no-repeat center/cover;
+    }
+
+    25% {
+        background: url('food_bg2.webp') no-repeat center/cover;
+    }
+
+    50% {
+        background: url('food_bg3.jpg') no-repeat center/cover;
+    }
+
+    100% {
+        background: url('food_bg5.webp') no-repeat center/cover;
+    }
+}
+
+@keyframes color_change {
+    0% {
+        color: rgb(239, 120, 120);
+        text-shadow: -2px -2px 1px rgb(60, 19, 19);
+    }
+
+    14% {
+        color: rgb(252, 205, 119);
+        text-shadow: -2px -2px 1px rgb(60, 19, 19);
+    }
+
+    28% {
+        color: rgb(248, 248, 123);
+        text-shadow: -2px -2px 1px rgb(60, 19, 19);
+    }
+
+    42% {
+        color: rgb(120, 244, 120);
+        text-shadow: -2px -2px 1px rgb(60, 19, 19);
+    }
+
+    56% {
+        color: rgb(96, 96, 241);
+        text-shadow: -2px -2px 1px rgb(60, 19, 19);
+    }
+
+    70% {
+        color: rgb(187, 108, 244);
+        text-shadow: -2px -2px 1px rgb(60, 19, 19);
+    }
+
+    84% {
+        color: rgb(253, 105, 253);
+        text-shadow: -2px -2px 1px rgb(60, 19, 19);
+    }
+
+    100% {
+        color: white;
+        text-shadow: -2px -2px 1px rgb(60, 19, 19);
+    }
+}
+
+@keyframes media_part_bg {
+    0% {
+        background: url('media.jpg');
+    }
+
+    100% {
+        background: url('media1.jpg');
+    }
+}
